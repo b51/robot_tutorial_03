@@ -26,6 +26,7 @@ $ ./particle_filter -num [particles number]
 * 补充更新权重后更新粒子的函数 ParticleFilter::Resample
 * [扩展] 如果已知起始位姿态，如何初始化粒子更合适
 * [扩展] 如果是全场地图，会出现什么问题，该如何解决
+* [扩展] 将图片内容转换到 ROS rviz 内显示，包括场地，粒子位姿，理想位姿，真实位姿，粒子滤波位姿(以及真实位姿及粒子滤波姿态的不确定度)
 
 ### Reference
 https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/more-on-normal-distributions/v/introduction-to-the-normal-distribution
