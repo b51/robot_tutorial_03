@@ -18,13 +18,11 @@ endif(CMAKE_BUILD_TYPE STREQUAL "Release")
 
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
-find_package(ceres REQUIRED)
 
 include_directories(
   include
   ${EIGEN3_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
-  ${CERES_INCLUDE_DIRS}
 )
 
 ###########
@@ -40,4 +38,5 @@ target_link_libraries(${PROJECT_NAME}
   ${OpenCV_LIBRARIES}
   ${GLOG_LIBRARIES}
   gflags
+  glog
 )
