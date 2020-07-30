@@ -14,7 +14,7 @@
 
 #include "ParticleFilter.h"
 
-DEFINE_bool(display, false, "Do display particles for debug?");
+DEFINE_bool(display, true, "Do display particles for debug?");
 DEFINE_int32(num, 50, "number of particles");
 
 int main(int argc, char* argv[]) {
