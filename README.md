@@ -19,7 +19,7 @@ $ ./particle_filter -num [particles number]
 * 代码中 real_pose 表示由于噪声干扰得到的实际位姿, 图中用蓝色表示
 * 图中绿色的表示粒子滤波得到的位姿
 * 设定机器人的观测范围为3.5m, 视角为60度
-* 地图为半场地图，宽4.5m，球门柱分别位于 (4.0, +-1.5) 处
+* 地图为半场地图，宽5.5m，高 6m，球门柱分别位于 (4.5, +-1.5) 处
 
 * 补充根据控制命令更新粒子位姿的函数 ParticleFilter::UpdatePose 
 * 补充根据观测更新粒子权重的函数 ParticleFilter::UpdateParticlesWeight

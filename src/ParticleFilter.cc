@@ -189,7 +189,7 @@ std::vector<Eigen::Vector2d> ParticleFilter::GetObservations(const Pose& pose) {
       continue;
 
     double angle = atan2(pose_relative.y(), pose_relative.x());
-    if (angle > 30 * M_PI or angle < -30 * M_PI)
+    if (angle > 30 * kDegreeToRad or angle < -30 * kDegreeToRad)
       continue;
     pose_relative.x() += WhiteNoise(0., pose_relative.x() * 0.1);
     pose_relative.y() += WhiteNoise(0., pose_relative.y() * 0.1);
